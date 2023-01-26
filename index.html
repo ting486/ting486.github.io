@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ting's Personal Portfolio</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        body {
+            margin: 0;
+        }
+
+        p {
+            font-family: Georgia;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        h1 {font-size: 28px;}
+
+        #id {
+            font-size: 54px;
+            text-color: green;
+            //font-family: Arial;
+        }
+
+
+        #nav {
+            position: sticky;
+            width: 100%;
+            height: 10%;
+            //left: 0;
+            top: 0;
+            padding-block: 15px;
+            background-color: #E2D1F9;
+            z-index: 10;
+            padding-top: 40px;
+            padding-bottom: 40px;
+        }
+
+        #nav a {
+            padding-inline: 20px;
+            font-size: 24px;
+            font-color: #373737;
+            text-decoration: none;
+        }
+
+        #nav a:visited {
+            text-decoration: none;
+        }
+
+        .vertical-center {
+            margin: 0;
+            position: absolute;
+            top: 50%;
+            -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+        }
+
+        .left {
+            left: 0;
+            padding-left: 15px;
+        }
+
+        .right {
+            right: 0;
+            padding-right: 15px;
+        }
+
+
+        #main {
+            //left: 0;
+            //bottom: 0;
+            width: 100%;
+            //max-height: 90%;
+            overflow: auto;
+        }
+
+        .center {
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            left: 0;
+            bottom: 0;
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <div class="vertical-center left">
+            <span id="ting">Ting!</span>
+        </div>
+        <div class="vertical-center right">
+            <a href="#about">About Me</a>
+            <a href="#experience">Work Experience</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <div id="main">
+        <div id="about">
+            <h1>About Me</h1>
+            <p>
+                Hello!
+                My name is Ting and I am a recent graduate from
+                    <a href="https://www.ubc.ca/"> the University of British Columbia (UBC) </a>
+                    where I studied mathematics and economics.
+                I am currently working as a reporting & analytics intern at
+                    <a href="https://www.bci.ca/"> British Columbia Investment Management Corporation (BCI)</a>,
+                    where I am developing a web application to track the progress of ETL pipelines.
+                I did a co-op in the same team at BCI about 1.5 years ago and designed and developed an ETL pipeline
+                    which computes client returns and portfolio contributions.
+                The pipeline is doing pretty well and there have not been any errors so far!
+            </p>
+            <p>
+                I am passionate about data and machine learning, and have developed a wide range of data-related skills,
+                    including Python (Pandas, Scikit-learn, Flask, Matplotlib, NLTK), SQL and Tableau.
+                I am also proficient in Java, C++, HTML, Javascript, CSS and Matlab, and have exposure to AWS cloud technologies.
+                (Fun Fact: I wrote this website using HTML, Javascript and CSS!)
+                I am excited to bring my skills and experience to new challenges and opportunities, and am always
+                    looking for ways to grow and improve.
+            </p>
+            <p>
+                In my free time, I enjoy exploring different cuisines in the city.
+                I believe that food is not just about nourishment, but also about culture, tradition, and memories.
+                I also love travelling during holidays, where I get to explore the beauty of the world.
+            </p>
+            <p>
+                Please feel free to browse through my portfolio and contact me if you have any questions or opportunities.
+                Thank you for visiting!
+            </p>
+        </div>
+
+        <div id="experience">
+            <h1>Work Experience</h1>
+        </div>
+
+        <div id="projects">
+            <h1>Projects</h1>
+
+        </div>
+
+        <div id="contact">
+            <h1>Contact</h1>
+            <form class="center" action="submit-form.php" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name"><br>
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email"><br>
+              <label for="message">Message:</label>
+              <textarea id="message" name="message"></textarea><br>
+              <input type="submit" value="Submit">
+            </form>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <a href="https://www.linkedin.com/in/dongting-guo/"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
+        <a href="https://github.com/ting486"><i class="fa fa-github" style="font-size:30px"></i></a>
+        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a> <br>
+
+        <span style="font-size: 12px">Copyright &copy;2023 ting486</span>
+    </div>
+
+</body>
+
+<script>
+
+</script>
+</html>
