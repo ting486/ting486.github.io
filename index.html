@@ -2,115 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+<!--    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">-->
+<!--    <link rel="stylesheet" href="https://www.jsalert.com/build/jsalert.min.css"/>-->
+<!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css"/>-->
+<!--    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/default.min.css"/>-->
+    <link rel="stylesheet" type="text/css" href="./static/my_styles.css">
+
+<!--    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>-->
+<!--    <script src="https://www.jsalert.com/build/jsalert.min.js"></script>-->
+<!--    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="./static/my_script.js"></script>
+
     <title>Ting's Personal Portfolio</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!--    font-family list: https://www.tutorialbrain.com/css_tutorial/css_font_family_list/-->
 
-    <style>
-        body {
-            margin: 0;
-        }
-
-        p {
-            font-family: Georgia;
-            font-size: 16px;
-            line-height: 1.5;
-        }
-
-        h1 {font-size: 28px;}
-
-        #id {
-            font-size: 54px;
-            text-color: green;
-            //font-family: Arial;
-        }
-
-
-        #nav {
-            position: sticky;
-            width: 100%;
-            height: 10%;
-            //left: 0;
-            top: 0;
-            padding-block: 15px;
-            background-color: #E2D1F9;
-            z-index: 10;
-            padding-top: 40px;
-            padding-bottom: 40px;
-        }
-
-        #nav a {
-            padding-inline: 20px;
-            font-size: 24px;
-            font-color: #373737;
-            text-decoration: none;
-        }
-
-        #nav a:visited {
-            text-decoration: none;
-        }
-
-        .vertical-center {
-            margin: 0;
-            position: absolute;
-            top: 50%;
-            -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-        }
-
-        .left {
-            left: 0;
-            padding-left: 15px;
-        }
-
-        .right {
-            right: 0;
-            padding-right: 15px;
-        }
-
-
-        #main {
-            //left: 0;
-            //bottom: 0;
-            width: 100%;
-            //max-height: 90%;
-            overflow: auto;
-        }
-
-        .center {
-            margin-left: auto;
-            margin-right: auto;
-            text-align: center;
-        }
-
-        .footer {
-            width: 100%;
-            left: 0;
-            bottom: 0;
-            text-align: center;
-            padding-top: 50px;
-            padding-bottom: 15px;
-        }
-    </style>
 </head>
 
 <body>
     <div id="nav">
-        <div class="vertical-center left">
-            <span id="ting">Ting!</span>
+        <div class="vertical-center" style="position:absolute; left:0; padding-left:20px;">
+            <span id="ting" style="font-family: Apple Chancery; font-size: 36px; color: #373737;">Ting</span>
+<!--            font-family:Wingdings gives symbols - also cool-->
         </div>
         <div class="vertical-center right">
             <a href="#about">About Me</a>
             <a href="#experience">Work Experience</a>
             <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
+<!--            <a href="#photo-gallery">Photo Gallery</a>-->
         </div>
     </div>
 
     <div id="main">
-        <div id="about">
-            <h1>About Me</h1>
+        <div class="section" id="about" style="background-color:#AAC9CE">
+            <h1 style="color:#195058">About Me</h1>
+            <img src="./static/pics/profile_pic.JPG" alt="profile_pic" height="200"
+                 style="border-radius: 50%; object-fit: cover;object-position: top 0px right 20%; float: right; padding: 20px">
             <p>
                 Hello!
                 My name is Ting and I am a recent graduate from
@@ -140,37 +74,138 @@
                 Please feel free to browse through my portfolio and contact me if you have any questions or opportunities.
                 Thank you for visiting!
             </p>
+            <p>
+                <span class="italic" style="font-size: 18px;">
+                    <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/81aea5b1-b77a-4799-ba46-07ab95b7e9f0/Ting_Guo_resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230128%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230128T033304Z&X-Amz-Expires=86400&X-Amz-Signature=b6995a36dbbb191ee31e882dec298e7fda6becb88b2bf1e3dbeffad885f638f4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Ting_Guo_resume.pdf%22&x-id=GetObject"
+                        target="_blank">
+                        Click here</a> to view my resume
+                </span>
+            </p>
         </div>
 
-        <div id="experience">
-            <h1>Work Experience</h1>
+
+        <div class="section" id="experience"  style="background-color:#C9BBCB">
+            <h1 style="color:#4D2540">Work Experience</h1>
+
+            <div class="row">
+                <div class="col">
+                    <h3>Reporting & Analytics Intern</h3>
+                    <span class="company">British Columbia Investment Management Corporation</span> <br>
+                    <span class="italic">Jan 2023 - Present</span><br>
+                    <ul>
+                        <li>Developed a reporting tracking web application using Python (Flask) for the backend, and HTML,
+                            Javascript and CSS for the frontend, resulting in increased efficiency</li>
+                        <li>Implemented real-time data visualization by integrating SQL queries to display live results
+                            directly from the database to the application, providing stakeholders with up-to-date information</li>
+                        <li>Enhanced application security by implementing user authentication</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Data Analyst</h3>
+                    <span class="company">Vancouver School of Economics Undergraduate Society</span><br>
+                    <span class="italic">Jul 2022 - Present</span><br>
+                    <ul>
+                        <li>Decreased projected surplus by 50% by creating a budget sheet using Excel and proposing
+                            budget improvements through critical data analysis</li>
+                        <li>Prepared a quarterly report which includes financial performance and recommendations for
+                            future actions to internal and external stakeholders, resulting in increased transparency</li>
+                        <li>Created infographics on economics-related topics and shared as an educational resource with
+                            1000+ economics students</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3>Reporting & Analytics Co-op (Data Engineer + Data Scientist)</h3>
+                    <span class="company">British Columbia Investment Management Corporation</span><br>
+                    <span class="italic">Sep 2021 - Apr 2022</span><br>
+                    <ul>
+                        <li>Designed and developed a scalable ETL pipeline to compute client returns and portfolio
+                            contributions using Python (Pandas) and SQL by pulling data from 10,000,000+ rows in
+                            10+ tables on Microsoft SQL Server</li>
+                        <li>Created an interactive Tableau performance dashboard for individual clients that is updated
+                            daily and used in client meetings by Department Head</li>
+                        <li>Migrated part of an ETL pipeline from R to Python, reducing code runtime by ~90%</li>
+                    </ul>
+                </div>
+
+            </div>
+
         </div>
 
-        <div id="projects">
-            <h1>Projects</h1>
+
+        <div class="section" id="projects"  style="background-color:#F3DBCF">
+            <h1 style="color:#6C361B">Projects</h1>
+
+            <div class="row">
+                <div class="col">
+                    <h3><a href="https://github.com/ting486/Consumer-Reviews-And-Purchasing-Decisions" class="project-title">
+                        The Impact of Consumer Reviews on Product Sales</a></h3>
+                    <ul>
+                        <li>Analyzed the impact of consumer reviews on the sales of Amazon video game products using regression
+                            based on 1.5 million review data and 40,000 product data
+                        </li>
+                        <li>Applied natural language processing (NLP) to analyze consumer review sentiment using Python (NLTK)</li>
+                        <li>Increased model robustness by conducting heterogeneity tests to identify the effect of
+                            product features on product sales</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3><a href="" class="project-title">
+                        Maximization of University of British Columbia’s Undergraduate Tuition Revenue</a></h3>
+                    <ul>
+                        <li>Investigated the factors affecting UBC’s tuition revenue and developed a linear program to
+                            optimize revenue using Python (PuLP)</li>
+                        <li>Conducted an in-depth sensitivity analysis on shadow prices, slack values,
+                            and other parameters to evaluate the impact of changes on revenue outcomes</li>
+                    </ul>
+                </div>
+
+                <div class="col">
+                    <h3><a href="" class="project-title">Titanic - Machine Learning from Disaster</a></h3>
+                    <ul>
+                        <li>Conducted a comprehensive analysis of factors potentially impacting passenger survival rates using Python
+                            (Pandas, Scikit-learn, Matplotlib) through the creation of various plots</li>
+                        <li>Applied KNN model to predict the survival rate of passengers, achieving an accuracy of ~70%</li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <h3><a href="https://github.com/ting486/todolist" class="project-title">To-Do List</a></h3>
+                    <ul>
+                        <li>Created a to-do list application using Java that effectively tracks and manages tasks to
+                            increase productivity</li>
+                        <li>Extracted the latest prices of selected stocks using JSON API</li>
+                        <li>Enhanced robustness by employing a hierarchical data structure and incorporating try-catch
+                            statements for error handling</li>
+                    </ul>
+                </div>
+
+
+            </div>
 
         </div>
 
-        <div id="contact">
-            <h1>Contact</h1>
-            <form class="center" action="submit-form.php" method="post">
-              <label for="name">Name:</label>
-              <input type="text" id="name" name="name"><br>
-              <label for="email">Email:</label>
-              <input type="email" id="email" name="email"><br>
-              <label for="message">Message:</label>
-              <textarea id="message" name="message"></textarea><br>
-              <input type="submit" value="Submit">
-            </form>
-        </div>
+<!--        <div id="photo-gallery">-->
+<!--            <h1>Photo Gallery</h1>-->
+<!--            <p>Here are some pictures I took while exploring the restaurants in the city and/or travelling.</p>-->
+<!--            -->
+<!--        </div>-->
 
     </div>
 
 
     <div class="footer">
-        <a href="https://www.linkedin.com/in/dongting-guo/"><i class="fa fa-linkedin-square" style="font-size:30px"></i></a>
-        <a href="https://github.com/ting486"><i class="fa fa-github" style="font-size:30px"></i></a>
-        <a href=""><i class="fa fa-envelope" style="font-size:30px"></i></a> <br>
+        <a href="https://www.linkedin.com/in/dongting-guo/" target=”_blank”>
+            <i class="fa fa-linkedin-square" style="font-size:30px;color:#3B2525"></i></a>
+        <a href="https://github.com/ting486" target=”_blank”>
+            <i class="fa fa-github" style="font-size:30px;color:#3B2525"></i></a>
+        <a href="mailto:ting1107g@gmail.com" target=”_blank”>
+            <i class="fa fa-envelope" style="font-size:30px;color:#3B2525"></i></a> <br>
 
         <span style="font-size: 12px">Copyright &copy;2023 ting486</span>
     </div>

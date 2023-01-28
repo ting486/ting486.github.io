@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+}
+
+p, h1, h2, h3, h4, a, span, li, div {
+    font-family: Courier New;
+    line-height: 1.5;
+}
+
+p {
+    text-align: justify;
+    font-size: 18px;
+}
+
+h1 {font-size: 32px;}
+
+ul {
+    padding: 0px 0px 0px 20px;
+    box-sizing: border-box;
+}
+
+li {
+    text-align: justify;
+}
+
+
+#nav {
+    position: sticky;
+    width: 100%;
+    height: 10%;
+    top: 0;
+    background-color: #F0F0F0; //E2D1F9
+    z-index: 10;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+#nav a {
+    padding-inline: 15px;
+    font-size: 20px;
+    color: #373737;
+    text-decoration: none;
+}
+
+#nav a:visited {
+    text-decoration: none;
+    color: #373737;
+}
+
+.vertical-center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.horizontal-center {
+    position: absolute;
+    left: 50%;
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+/***
+.left {
+    margin-right: 10px;
+}
+***/
+
+.right {
+    position: absolute;
+    right: 0;
+    padding-right: 15px;
+}
+
+
+#main {
+    //bottom: 0;
+    width: 100%;
+    overflow: auto;
+    min-height: 80%;
+}
+
+.section {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px 50px 20px 50px;
+    scroll-margin-top: 10vh;
+}
+
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.col {
+    max-width: 30%;
+    flex: 0 0 30%;
+    box-sizing: border-box;
+    //text-align: justify;
+    background-color: #D7C8CE;
+    padding: 10px 20px 0px 20px;
+}
+
+.col a {
+    align: center;
+    //text-decoration: none;
+    color: black;
+}
+
+.company {
+    font-size: 16px;
+    color: grey;
+}
+
+.italic {
+    font-size: 16px;
+    font-style: italic;
+}
+
+
+.footer {
+    //position: absolute;
+    width: 100%;
+    //left: 0;
+    bottom: 0;
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: #F0F0F0;
+}
+
+@media (max-width: 800px) {
+  .col {
+    flex: 100%;
+  }
+}
