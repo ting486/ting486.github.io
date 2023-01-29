@@ -1,0 +1,1 @@
+$("a:not(#nav a)").attr("target", "_blank");

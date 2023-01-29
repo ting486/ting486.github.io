@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+<!--    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">-->
 <!--    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">-->
 <!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
 <!--    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/dataTables.bootstrap5.css">-->
@@ -18,6 +19,8 @@
 <!--    <script src="https://www.jsalert.com/build/jsalert.min.js"></script>-->
 <!--    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
     <script type="text/javascript" src="./static/my_script.js"></script>
 
     <title>Ting's Personal Portfolio</title>
@@ -29,19 +32,20 @@
 <body>
     <div id="nav">
         <div class="vertical-center" style="position:absolute; left:0; padding-left:20px;">
-            <span id="ting" style="font-family: Apple Chancery; font-size: 36px; color: #373737;">Ting</span>
+            <span id="logo" style="font-family: Apple Chancery; font-size: 36px; color: #373737;">Ting</span>
 <!--            font-family:Wingdings gives symbols - also cool-->
         </div>
         <div class="vertical-center right">
             <a href="#about">About Me</a>
-            <a href="#experience">Work Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#experience">Experience</a>
             <a href="#projects">Projects</a>
 <!--            <a href="#photo-gallery">Photo Gallery</a>-->
         </div>
     </div>
 
     <div id="main">
-        <div class="section" id="about" style="background-color:#AAC9CE">
+        <div class="section" id="about" style="background-color:#BCD4D8">
             <h1 style="color:#195058">About Me</h1>
             <img src="./static/pics/profile_pic.JPG" alt="profile_pic" height="200"
                  style="border-radius: 50%; object-fit: cover;object-position: top 0px right 20%; float: right; padding: 20px">
@@ -59,7 +63,7 @@
             </p>
             <p>
                 I am passionate about data and machine learning, and have developed a wide range of data-related skills,
-                    including Python (Pandas, Scikit-learn, Flask, Matplotlib, NLTK), SQL and Tableau.
+                    including Python, SQL and Tableau.
                 I am also proficient in Java, C++, HTML, Javascript, CSS and Matlab, and have exposure to AWS cloud technologies.
                 (Fun Fact: I wrote this website using HTML, Javascript and CSS!)
                 I am excited to bring my skills and experience to new challenges and opportunities, and am always
@@ -74,21 +78,66 @@
                 Please feel free to browse through my portfolio and contact me if you have any questions or opportunities.
                 Thank you for visiting!
             </p>
-            <p>
-                <span class="italic" style="font-size: 18px;">
-                    <a href="https://s3.us-west-2.amazonaws.com/secure.notion-static.com/81aea5b1-b77a-4799-ba46-07ab95b7e9f0/Ting_Guo_resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230128%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230128T033304Z&X-Amz-Expires=86400&X-Amz-Signature=b6995a36dbbb191ee31e882dec298e7fda6becb88b2bf1e3dbeffad885f638f4&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Ting_Guo_resume.pdf%22&x-id=GetObject"
-                        target="_blank">
-                        Click here</a> to view my resume
-                </span>
-            </p>
+
+            <button onclick="window.open('https://s3.us-west-2.amazonaws.com/secure.notion-static.com/81aea5b1-b77a-4799-ba46-07ab95b7e9f0/Ting_Guo_resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230129%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230129T041003Z&X-Amz-Expires=86400&X-Amz-Signature=46078b6e3901124f5d14af955b3ae36d7e7480f2d3001bb9d8975496f1661f0b&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Ting_Guo_resume.pdf%22&x-id=GetObject')">
+                Resume</button>
+            <button onclick="window.open('https://www.linkedin.com/in/dongting-guo/')">LinkedIn</button>
+            <button onclick="window.open('https://github.com/ting486')">GitHub</button>
+            <button onclick="window.open('mailto:ting1107g@gmail.com')">Email</button>
+            <br><br>
+
         </div>
 
 
-        <div class="section" id="experience"  style="background-color:#C9BBCB">
-            <h1 style="color:#4D2540">Work Experience</h1>
+        <div class="section" id="skills" style="background-color: #B7C2D9">
+            <h1 style="color: #323D4F">Skills</h1>
 
-            <div class="row">
-                <div class="col">
+            <p>
+                <b>Programming</b>:
+                Python (NumPy, Pandas, Scikit-learn, SciPy, NLTK, Matplotlib, PuLP) <i class="fa-brands fa-python"></i>,
+                Java <i class="fa-brands fa-java"></i>,
+                C++ <iconify-icon icon="teenyicons:cplusplus-solid"></iconify-icon>,
+                Matlab <iconify-icon icon="file-icons:matlab"></iconify-icon>
+            </p>
+            <p>
+                <b>Frontend</b>:
+                HTML <i class="fa-brands fa-html5"></i>,
+                CSS <i class="fa-brands fa-css3"></i>,
+                Javascript <i class="fa-brands fa-js"></i>
+            </p>
+            <p>
+                <b>Data</b>:
+                Microsoft Excel <i class="fa-solid fa-file-excel"></i>,
+                SQL <iconify-icon icon="bi:filetype-sql"></iconify-icon>,
+                Microsoft SQL Server <i class="fa-solid fa-database"></i>,
+                Tableau <i class="fa-solid fa-chart-line"></i>
+            </p>
+            <p>
+                <b>Tools</b>:
+                GitHub <i class="fa-brands fa-github"></i>,
+                Amazon Web Services (AWS) <i class="fa-brands fa-aws"></i>
+            </p>
+            <p>
+                <b>Mathematics</b>: calculus, linear algebra, statistics, probability theory, ordinary & partial differential equation,
+                numerical approximation, linear programming/optimization, number theory
+            </p>
+            <p>
+                <b>Computer Science</b>: machine learning & data mining, data structure, computer algorithm & analysis,
+                computer vision
+            </p>
+            <p>
+                <b>Economics</b>: microeconomics, macroeconomics, econometrics, money & banking, international finance,
+                economics of taxation, game theory
+            </p>
+
+        </div>
+
+
+        <div class="section" id="experience"  style="background-color:#D4C4CF">
+            <h1 style="color:#4D2540">Experience</h1>
+
+            <div class="container">
+                <div class="card">
                     <h3>Reporting & Analytics Intern</h3>
                     <span class="company">British Columbia Investment Management Corporation</span> <br>
                     <span class="italic">Jan 2023 - Present</span><br>
@@ -101,7 +150,7 @@
                     </ul>
                 </div>
 
-                <div class="col">
+                <div class="card">
                     <h3>Data Analyst</h3>
                     <span class="company">Vancouver School of Economics Undergraduate Society</span><br>
                     <span class="italic">Jul 2022 - Present</span><br>
@@ -115,7 +164,7 @@
                     </ul>
                 </div>
 
-                <div class="col">
+                <div class="card">
                     <h3>Reporting & Analytics Co-op (Data Engineer + Data Scientist)</h3>
                     <span class="company">British Columbia Investment Management Corporation</span><br>
                     <span class="italic">Sep 2021 - Apr 2022</span><br>
@@ -129,6 +178,33 @@
                     </ul>
                 </div>
 
+                <div class="card">
+                    <h3>Research Assistant</h3>
+                    <span class="company">UBC Sauder School of Business</span><br>
+                    <span class="italic">Jun 2021 - Jun 2022</span><br>
+                    <ul>
+                        <li>Collected personal and corporate data of 1000+ billionaires through sources such as Wikipedia
+                            and press articles in business media to assist with research on exploring the role of tax avoidance
+                            in explaining inequality</li>
+                        <li>Formatted raw data and fixed/removed incorrect/duplicate entries to construct a user-friendly database</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Imagine Orientation Leader</h3>
+                    <span class="company">UBC Science Student Engagement</span><br>
+                    <span class="italic">Jul 2020 - Dec 2020</span><br>
+                    <ul>
+                        <li>Supported a group of 9 incoming students, as part of a large-scale faculty welcome event with
+                            2000+ attendees, with their transition into UBC and throughout the first term by sending bi-weekly
+                            check-in emails and answering inquiries</li>
+                        <li>Fostered social connections amongst 100+ students by contributing to Canvas discussion boards</li>
+                        <li>Conducted a friendly online welcome session on Orientation Day to incoming students</li>
+                        <li>Recognized as an outstanding leader and invited by the Department of Mathematics to
+                            Meet Your Major event</li>
+                    </ul>
+                </div>
+
             </div>
 
         </div>
@@ -136,59 +212,74 @@
 
         <div class="section" id="projects"  style="background-color:#F3DBCF">
             <h1 style="color:#6C361B">Projects</h1>
+            <div class="container">
 
-            <div class="row">
-                <div class="col">
+                <div class="card">
+                    <h3><a href="https://github.com/ting486/ting486.github.io" class="project-title">
+                        Ting's Personal Portfolio (This Website!)</a></h3>
+                    <span class="language"><i>HTML, CSS, Javascript</i></span>
+                    <ul>
+                        <li>Designed and created a personal website which showcases past experience and projects</li>
+                        <li>Implemented styles to enhance the aesthetics of the website</li>
+                    </ul>
+                </div>
+
+                <div class="card">
                     <h3><a href="https://github.com/ting486/Consumer-Reviews-And-Purchasing-Decisions" class="project-title">
                         The Impact of Consumer Reviews on Product Sales</a></h3>
+                    <i>Python (NLTK), Jupyter Notebook, regression, natural language processing (NLP)</i>
                     <ul>
                         <li>Analyzed the impact of consumer reviews on the sales of Amazon video game products using regression
                             based on 1.5 million review data and 40,000 product data
                         </li>
-                        <li>Applied natural language processing (NLP) to analyze consumer review sentiment using Python (NLTK)</li>
+                        <li>Applied natural language processing (NLP) to analyze consumer review sentiment</li>
                         <li>Increased model robustness by conducting heterogeneity tests to identify the effect of
                             product features on product sales</li>
                     </ul>
                 </div>
 
-                <div class="col">
-                    <h3><a href="" class="project-title">
+                <div class="card">
+                    <h3><a href="https://github.com/ting486/Tuition-Revenue-Maximization" class="project-title">
                         Maximization of University of British Columbia’s Undergraduate Tuition Revenue</a></h3>
+                    <span class="language">
+                        <i>Python (PuLP), Jupyter Notebook, linear programming/optimization, sensitivity analysis</i>
+                    </span>
                     <ul>
                         <li>Investigated the factors affecting UBC’s tuition revenue and developed a linear program to
-                            optimize revenue using Python (PuLP)</li>
+                            optimize revenue</li>
                         <li>Conducted an in-depth sensitivity analysis on shadow prices, slack values,
                             and other parameters to evaluate the impact of changes on revenue outcomes</li>
                     </ul>
                 </div>
 
-                <div class="col">
-                    <h3><a href="" class="project-title">Titanic - Machine Learning from Disaster</a></h3>
+                <div class="card">
+                    <h3><a href="https://github.com/ting486/Passenger-Survival-Prediction" class="project-title">
+                        Titanic - Machine Learning from Disaster</a></h3>
+                    <span class="language">
+                        <i>Python (Pandas, Scikit-learn, Matplotlib), Jupyter Notebook, machine learning</i>
+                    </span>
                     <ul>
-                        <li>Conducted a comprehensive analysis of factors potentially impacting passenger survival rates using Python
-                            (Pandas, Scikit-learn, Matplotlib) through the creation of various plots</li>
+                        <li>Conducted a comprehensive analysis of factors potentially impacting passenger survival rates
+                            through the creation of various plots</li>
                         <li>Applied KNN model to predict the survival rate of passengers, achieving an accuracy of ~70%</li>
                     </ul>
                 </div>
 
-            </div>
-
-            <div class="row">
-                <div class="col">
+                <div class="card">
                     <h3><a href="https://github.com/ting486/todolist" class="project-title">To-Do List</a></h3>
+                    <span class="language"><i>Java, API, data structure</i></span>
                     <ul>
-                        <li>Created a to-do list application using Java that effectively tracks and manages tasks to
-                            increase productivity</li>
+                        <li>Created a to-do list application that effectively tracks and manages tasks, which
+                            increases productivity</li>
                         <li>Extracted the latest prices of selected stocks using JSON API</li>
                         <li>Enhanced robustness by employing a hierarchical data structure and incorporating try-catch
                             statements for error handling</li>
                     </ul>
                 </div>
 
-
             </div>
-
         </div>
+
 
 <!--        <div id="photo-gallery">-->
 <!--            <h1>Photo Gallery</h1>-->
@@ -200,12 +291,12 @@
 
 
     <div class="footer">
-        <a href="https://www.linkedin.com/in/dongting-guo/" target=”_blank”>
-            <i class="fa fa-linkedin-square" style="font-size:30px;color:#3B2525"></i></a>
-        <a href="https://github.com/ting486" target=”_blank”>
-            <i class="fa fa-github" style="font-size:30px;color:#3B2525"></i></a>
-        <a href="mailto:ting1107g@gmail.com" target=”_blank”>
-            <i class="fa fa-envelope" style="font-size:30px;color:#3B2525"></i></a> <br>
+        <a href="https://www.linkedin.com/in/dongting-guo/">
+            <i class="fa-brands fa-linkedin" style="font-size:30px;color:#3B2525"></i></a>
+        <a href="https://github.com/ting486">
+            <i class="fa-brands fa-github" style="font-size:30px;color:#3B2525"></i></a>
+        <a href="mailto:ting1107g@gmail.com">
+            <i class="fa-solid fa-envelope" style="font-size:30px;color:#3B2525"></i></a> <br>
 
         <span style="font-size: 12px">Copyright &copy;2023 ting486</span>
     </div>
@@ -213,6 +304,19 @@
 </body>
 
 <script>
+    const arr = [];
+    let counter = 1;
+    const languageInput = document.querySelector('input[type = "language"]');
+    const languages = document.querySelectorAll(".language");
+
+    $("a:not(#nav a)").attr("target", "_blank");
+
+    for (const l of languages) {
+        myArray.push({
+            id: counter++,
+            text: caption.textContent
+        });
+    }
 
 </script>
 </html>
