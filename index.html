@@ -16,12 +16,9 @@
     <link rel="stylesheet" type="text/css" href="./static/my_styles.css">
 
 <!--    <script src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js'></script>-->
-<!--    <script src="https://www.jsalert.com/build/jsalert.min.js"></script>-->
-<!--    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
     <script src="https://code.iconify.design/iconify-icon/1.0.2/iconify-icon.min.js"></script>
-    <script type="text/javascript" src="./static/my_script.js"></script>
 
     <title>Ting's Personal Portfolio</title>
 
@@ -30,6 +27,7 @@
 </head>
 
 <body>
+
     <div id="nav">
         <div class="vertical-center" style="position:absolute; left:0; padding-left:20px;">
             <span id="logo" style="font-family: Apple Chancery; font-size: 36px; color: #373737;">Ting</span>
@@ -212,6 +210,34 @@
 
         <div class="section" id="projects"  style="background-color:#F3DBCF">
             <h1 style="color:#6C361B">Projects</h1>
+
+            <form name="projectFilterForm" id="projectFilterForm">
+                <span>
+                    <input type="radio" id="all" name="myLanguage" value="All" checked>
+                    <label for="all">All</label>
+                </span>
+                <span>
+                    <input type="radio" id="python" name="myLanguage" value="Python">
+                    <label for="python">Python</label>
+                </span>
+                <span>
+                    <input type="radio" id="java" name="myLanguage" value="Java">
+                    <label for="java">Java</label>
+                </span>
+                <span>
+                    <input type="radio" id="html" name="myLanguage" value="HTML">
+                    <label for="html">HTML</label>
+                </span>
+                <span>
+                    <input type="radio" id="css" name="myLanguage" value="CSS">
+                    <label for="css">CSS</label>
+                </span>
+                <span>
+                    <input type="radio" id="javascript" name="myLanguage" value="Javascript">
+                    <label for="javascript">Javascript</label>
+                </span>
+            </form>
+
             <div class="container">
 
                 <div class="card">
@@ -227,7 +253,7 @@
                 <div class="card">
                     <h3><a href="https://github.com/ting486/Consumer-Reviews-And-Purchasing-Decisions" class="project-title">
                         The Impact of Consumer Reviews on Product Sales</a></h3>
-                    <i>Python (NLTK), Jupyter Notebook, regression, natural language processing (NLP)</i>
+                    <span class="language"><i>Python (NLTK), Jupyter Notebook, regression, natural language processing (NLP)</i></span>
                     <ul>
                         <li>Analyzed the impact of consumer reviews on the sales of Amazon video game products using regression
                             based on 1.5 million review data and 40,000 product data
@@ -241,9 +267,7 @@
                 <div class="card">
                     <h3><a href="https://github.com/ting486/Tuition-Revenue-Maximization" class="project-title">
                         Maximization of University of British Columbia’s Undergraduate Tuition Revenue</a></h3>
-                    <span class="language">
-                        <i>Python (PuLP), Jupyter Notebook, linear programming/optimization, sensitivity analysis</i>
-                    </span>
+                    <span class="language"><i>Python (PuLP), Jupyter Notebook, linear programming/optimization, sensitivity analysis</i></span>
                     <ul>
                         <li>Investigated the factors affecting UBC’s tuition revenue and developed a linear program to
                             optimize revenue</li>
@@ -255,9 +279,7 @@
                 <div class="card">
                     <h3><a href="https://github.com/ting486/Passenger-Survival-Prediction" class="project-title">
                         Titanic - Machine Learning from Disaster</a></h3>
-                    <span class="language">
-                        <i>Python (Pandas, Scikit-learn, Matplotlib), Jupyter Notebook, machine learning</i>
-                    </span>
+                    <span class="language"><i>Python (Pandas, Scikit-learn, Matplotlib), Jupyter Notebook, machine learning</i></span>
                     <ul>
                         <li>Conducted a comprehensive analysis of factors potentially impacting passenger survival rates
                             through the creation of various plots</li>
@@ -301,22 +323,9 @@
         <span style="font-size: 12px">Copyright &copy;2023 ting486</span>
     </div>
 
+
+    <script type="text/javascript" src="./static/my_script.js"></script>
+
 </body>
 
-<script>
-    const arr = [];
-    let counter = 1;
-    const languageInput = document.querySelector('input[type = "language"]');
-    const languages = document.querySelectorAll(".language");
-
-    $("a:not(#nav a)").attr("target", "_blank");
-
-    for (const l of languages) {
-        myArray.push({
-            id: counter++,
-            text: caption.textContent
-        });
-    }
-
-</script>
 </html>

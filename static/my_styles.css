@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
 }
@@ -8,8 +12,11 @@ p, h1, h2, h3, h4, a, span, li, div, button {
 }
 
 p {
-    text-align: justify;
     font-size: 18px;
+}
+
+#about p {
+    text-align: justify;
 }
 
 h1 {font-size: 32px;}
@@ -77,21 +84,16 @@ button:hover {
     transform: translateX(-50%);
 }
 
-/***
-.left {
-    margin-right: 10px;
-}
-***/
 
 .right {
     position: absolute;
     right: 0;
     padding-right: 15px;
+    text-align: right;
 }
 
 
 #main {
-    //bottom: 0;
     width: 100%;
     overflow: auto;
     min-height: 80%;
@@ -130,7 +132,6 @@ button:hover {
 
 .card {
     box-sizing: border-box;
-    //text-align: justify;
     padding: 10px 20px 0px 20px;
 }
 
@@ -147,14 +148,12 @@ button:hover {
     max-width: 30%;
     flex: 0 0 30%;
     box-sizing: border-box;
-    //text-align: justify;
     background-color: #D7C8CE;
     padding: 10px 20px 0px 20px;
 }
 
 .col a {
     align: center;
-    //text-decoration: none;
     color: black;
 }
 
@@ -168,11 +167,32 @@ button:hover {
     font-style: italic;
 }
 
+#projectFilterForm {
+    margin-bottom: 20px;
+    font-size: 20px;
+    accent-color: #6C361B;
+}
+
+#projectFilterForm span {
+    display: inline-block;
+    margin-right: 30px;
+}
+
+#projectFilterForm label:hover, #projectFilterForm input:hover, #projectFilterForm span:hover {
+    cursor: pointer;
+}
+
+#projectFilterForm input[type="radio"] {
+    width: 16px;
+    height: 16px;
+    margin: 0;
+}
+
+
 
 .footer {
     //position: absolute;
     width: 100%;
-    //left: 0;
     bottom: 0;
     text-align: center;
     padding-top: 25px;
@@ -181,10 +201,6 @@ button:hover {
 }
 
 @media only screen and (max-width: 800px) {
-    .col {
-        flex: 100%;
-    }
-
     .container {
         grid-template-columns: repeat(auto-fill, 90%);
     }
